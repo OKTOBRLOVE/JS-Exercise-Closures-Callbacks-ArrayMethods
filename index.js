@@ -240,8 +240,8 @@ function firstNamesAllCaps(runners) {
 */
 function getRunnersByTShirtSize(runners, tShirtSize) {
   /* CODE HERE */
-   const runnerShirtSizes = runners.filter(function(){
-    return tShirtSize.shirt_size === tShirtSize;
+   const runnerShirtSizes = runners.filter(function(runners){
+    return runners.shirt_size === tShirtSize;
   });
   return runnerShirtSizes;
 }
